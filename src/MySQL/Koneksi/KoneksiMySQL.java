@@ -15,6 +15,7 @@ public class KoneksiMySQL {
         try{
             Class.forName(JDBC_DRIVER);
             con=DriverManager.getConnection(dbUrl,dbUn,dbPs);
+            System.out.println("tes dari akun lain");
         }catch(ClassNotFoundException e){
             //System.out.println(e.getMessage());
             JOptionPane.showMessageDialog(null, "Server Database Error");
